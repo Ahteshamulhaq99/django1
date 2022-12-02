@@ -1,0 +1,43 @@
+
+
+
+<h1>Person Verification System</h1>
+
+
+<div class="w3-container">
+ 
+  <form action="output/" method="post" class="myclass" enctype="multipart/form-data">
+    {% csrf_token %}
+      {{ form.as_p }}
+  
+    <div>
+      <br>
+    <hr>
+    <br>
+      <label for="cnic">Choose CNIC Photo-!</label>
+      <input  class="w3-button w3-black w3-round-xxlarge" type="file" id="cnic" name="cnic" accept="image/*">
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div>
+      <label for="photo">Choose Selfie--------!</label>
+      <input class="w3-button w3-black w3-round-xxlarge" type="file" id="photo" name="photo" accept="image/*">
+    </div>
+    <br>
+    
+    
+    
+    <input class="w3-button w3-black w3-round-small" href="output/" value="Submit" method="POST" type="submit">
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
